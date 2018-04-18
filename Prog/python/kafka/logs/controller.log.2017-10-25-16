@@ -1,0 +1,5 @@
+[2017-10-25 16:07:15,290] DEBUG preRegister called. Server=com.sun.jmx.mbeanserver.JmxMBeanServer@66d3c617, name=log4j:logger=kafka.controller (kafka.controller)
+[2017-10-25 16:10:08,102] DEBUG preRegister called. Server=com.sun.jmx.mbeanserver.JmxMBeanServer@66d3c617, name=log4j:logger=kafka.controller (kafka.controller)
+[2017-10-25 16:11:19,605] DEBUG preRegister called. Server=com.sun.jmx.mbeanserver.JmxMBeanServer@66d3c617, name=log4j:logger=kafka.controller (kafka.controller)
+[2017-10-25 16:17:02,446] DEBUG preRegister called. Server=com.sun.jmx.mbeanserver.JmxMBeanServer@66d3c617, name=log4j:logger=kafka.controller (kafka.controller)
+[2017-10-25 16:25:01,628] DEBUG preRegister called. Server=com.sun.jmx.mbeanserver.JmxMBeanServer@66d3c617, name=log4j:logger=kafka.controller (kafka.controller)

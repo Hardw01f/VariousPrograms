@@ -1,0 +1,154 @@
+-- MySQL dump 10.13  Distrib 5.7.19, for osx10.12 (x86_64)
+--
+-- Host: localhost    Database: chocorate
+-- ------------------------------------------------------
+-- Server version	5.7.19
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `ar_internal_metadata`
+--
+
+DROP TABLE IF EXISTS `ar_internal_metadata`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `ar_internal_metadata` (
+  `key` varchar(255) NOT NULL,
+  `value` varchar(255) DEFAULT NULL,
+  `created_at` datetime NOT NULL,
+  `updated_at` datetime NOT NULL,
+  PRIMARY KEY (`key`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `ar_internal_metadata`
+--
+
+LOCK TABLES `ar_internal_metadata` WRITE;
+/*!40000 ALTER TABLE `ar_internal_metadata` DISABLE KEYS */;
+INSERT INTO `ar_internal_metadata` VALUES ('environment','development','2018-02-25 02:19:49','2018-02-25 02:19:49');
+/*!40000 ALTER TABLE `ar_internal_metadata` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `data`
+--
+
+DROP TABLE IF EXISTS `data`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `data` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `invasion_time` datetime DEFAULT NULL,
+  `invasion_location` varchar(255) DEFAULT NULL,
+  `created_at` datetime NOT NULL,
+  `updated_at` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `data`
+--
+
+LOCK TABLES `data` WRITE;
+/*!40000 ALTER TABLE `data` DISABLE KEYS */;
+/*!40000 ALTER TABLE `data` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `kokoa`
+--
+
+DROP TABLE IF EXISTS `kokoa`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `kokoa` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `invasion_time` datetime DEFAULT NULL,
+  `invasion_location` varchar(16) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `kokoa`
+--
+
+LOCK TABLES `kokoa` WRITE;
+/*!40000 ALTER TABLE `kokoa` DISABLE KEYS */;
+INSERT INTO `kokoa` VALUES (1,'2018-02-25 09:28:00','A'),(2,'2018-02-25 10:45:00','A'),(3,'2018-02-25 09:22:00','A'),(4,'2018-02-22 05:32:00','A'),(5,'2018-02-13 18:57:00','A'),(6,'2018-02-13 18:59:00','A'),(7,'2018-02-13 15:30:00','A'),(8,'2018-02-22 15:45:00','A'),(9,'2018-02-15 15:02:00','B'),(10,'2018-02-04 07:28:00','B'),(11,'2018-02-22 10:30:00','B'),(12,'2018-02-15 09:21:00','B'),(13,'2018-02-18 21:20:00','B'),(14,'2018-02-18 22:13:00','B'),(15,'2018-02-21 22:30:00','B'),(16,'2018-02-21 23:45:00','B'),(17,'2018-02-25 09:28:00','A');
+/*!40000 ALTER TABLE `kokoa` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `kokoas`
+--
+
+DROP TABLE IF EXISTS `kokoas`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `kokoas` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `invasion_time` datetime DEFAULT NULL,
+  `invasion_location` varchar(255) DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `kokoas`
+--
+
+LOCK TABLES `kokoas` WRITE;
+/*!40000 ALTER TABLE `kokoas` DISABLE KEYS */;
+INSERT INTO `kokoas` VALUES (1,'2018-02-25 09:28:00','A',NULL,NULL),(2,'2018-02-25 14:11:00','B',NULL,NULL),(3,'2018-02-25 14:35:00','B',NULL,NULL),(4,'2018-02-25 14:39:00','A',NULL,NULL),(5,'2018-02-25 14:57:00','A',NULL,NULL),(6,'2018-02-25 14:58:00','A',NULL,NULL),(7,'2018-02-25 14:59:00','A',NULL,NULL),(8,'2018-02-25 15:12:00','A',NULL,NULL),(9,'2018-02-25 15:13:00','A',NULL,NULL),(10,'2018-02-25 15:17:00','A',NULL,NULL),(11,'2018-02-25 15:18:00','A',NULL,NULL),(12,'2018-02-25 15:19:00','A',NULL,NULL),(13,'2018-02-25 15:34:00','A',NULL,NULL),(14,'2018-02-25 15:39:00','A',NULL,NULL),(15,'2018-02-25 15:40:00','A',NULL,NULL),(16,'2018-02-25 16:13:00','A',NULL,NULL),(17,'2018-02-25 16:18:00','A',NULL,NULL),(18,'2018-02-25 16:18:00','A',NULL,NULL);
+/*!40000 ALTER TABLE `kokoas` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `schema_migrations`
+--
+
+DROP TABLE IF EXISTS `schema_migrations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `schema_migrations` (
+  `version` varchar(255) NOT NULL,
+  PRIMARY KEY (`version`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `schema_migrations`
+--
+
+LOCK TABLES `schema_migrations` WRITE;
+/*!40000 ALTER TABLE `schema_migrations` DISABLE KEYS */;
+INSERT INTO `schema_migrations` VALUES ('20180225021722'),('20180225022124');
+/*!40000 ALTER TABLE `schema_migrations` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2018-02-26 15:16:36

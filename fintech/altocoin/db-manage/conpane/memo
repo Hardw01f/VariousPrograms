@@ -1,0 +1,15 @@
+
+mysql> show columns from btc;
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| brand   | varchar(64) | YES  |     | NULL    |       |
+| btcrate | double      | YES  |     | NULL    |       |
+| jpyrate | double      | YES  |     | NULL    |       |
+| time    | datetime    | YES  |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+4 rows in set (0.00 sec)
+
+
+
+

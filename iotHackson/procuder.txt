@@ -1,0 +1,18 @@
+
+
+## 動作手順
+
+golang/
+rails/LoveElly/
+
+配下が基本的に動く
+golangでバックを形成して、rails側でフロントを設計する
+
+## バック
+
+golang/server.goでサーバーを起動して、センサー側のnode.jsから異常値を検出した場合のみ、golang/client.goの変更したプログラムであるsensor_A.jsをその時の時刻と場所IDを引数にして実行し、server.goはclientから受け取ったらgolang/node/配下のjsを実行する。
+
+## フロント
+
+railsは基本的にmysqlをDBとして採用
+dumpはwebiot_mysql.dump
