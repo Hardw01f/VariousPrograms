@@ -1,1 +1,0 @@
-exports.message = "Hello jscafe";
